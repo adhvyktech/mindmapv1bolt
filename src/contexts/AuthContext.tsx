@@ -4,13 +4,13 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut as firebaseSignOu
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBtrCRuPK2fK3zCjTcpi3yAEECgV3EGjrk",
-  authDomain: "mindmapv1bolt.firebaseapp.com",
-  projectId: "mindmapv1bolt",
-  storageBucket: "mindmapv1bolt.appspot.com",
-  messagingSenderId: "350506508029",
-  appId: "1:350506508029:web:c22a786df8f81f498de894",
-  measurementId: "G-6TXE836LGM"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
